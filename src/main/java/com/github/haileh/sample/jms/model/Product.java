@@ -2,6 +2,12 @@ package com.github.haileh.sample.jms.model;
 
 import java.io.Serializable;
 
+/**
+ * The Product entity.
+ * 
+ * @author haile
+ *
+ */
 public class Product implements Serializable {
 
 	/**
@@ -13,7 +19,8 @@ public class Product implements Serializable {
 	private String productName;
 	private String productDescription;
 	
-	public Product(String productId, String productName, String productDescription) {
+	public Product(String productId, String productName, 
+			String productDescription) {
 		this.productId = productId;
 		this.productName = productName;
 		this.productDescription = productDescription;

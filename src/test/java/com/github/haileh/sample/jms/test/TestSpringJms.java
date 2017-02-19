@@ -44,7 +44,7 @@ public class TestSpringJms {
 		
 		System.out.println("Receiving a product instance 2 from Jms queue");
 
-		Optional<Product> product2 = storeService.getReceiveProduct("1");
+		Optional<Product> product2 = storeService.getReceiveProduct("2");
 		Assert.assertTrue(product2.isPresent());
 		Assert.assertEquals("Product 2", product2.get().getProductName());
 	}

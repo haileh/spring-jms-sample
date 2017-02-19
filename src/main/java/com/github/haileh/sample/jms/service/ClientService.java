@@ -9,6 +9,12 @@ import com.github.haileh.sample.jms.model.Product;
  *
  */
 public interface ClientService {
+	
+	/**
+	 * Send the product instance to Jms queue.
+	 * 
+	 * @param product
+	 */
 	void addProduct(Product product);	
 
 }
